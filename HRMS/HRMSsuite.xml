@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testng_scenarios.Debugmode_execution"/>
+      <class name="testng_scenarios.SampleTest"/>
+      <class name="testng_scenarios.GroupsTest"/>
+      <class name="testng_scenarios.HtmlunitTest_headless"/>
+      <class name="testng_scenarios.AssertTest"/>
+      <class name="testng_scenarios.FrameshandlingTest"/>
+      <class name="testng_scenarios.SampleTest5"/>
+      <class name="testng_scenarios.Chrome_headless"/>
+      <class name="testng_scenarios.SampleTest2"/>
+      <class name="testng_scenarios.SampleTest3"/>
+      <class name="testng_scenarios.ValidationCommands"/>
+      <class name="testng_scenarios.SampleTest4"/>
+      <class name="testng_scenarios.AjaxControl2"/>
+      <class name="testng_scenarios.InformationTest"/>
+      <class name="testng_scenarios.InformationCommands"/>
+      <class name="junit_Scenarios.Sample2"></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
