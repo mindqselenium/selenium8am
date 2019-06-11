@@ -10,6 +10,7 @@ public class WelcomeTest {
   }
   @BeforeTest
   public void beforeTest() {
+	  System.out.println("bye");
   }
 
 }
