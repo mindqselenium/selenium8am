@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite">
+<test name="keyword driven">
+	<classes>
+		<class name="testng_scenarios.FrameshandlingTest">
+					
+		</class>
+	</classes>
+</test>
+
+<test name="data driven">
+<classes>
+	<class name="datadriven.DataproviderTest"></class>
+</classes>
+</test>
+</suite>
