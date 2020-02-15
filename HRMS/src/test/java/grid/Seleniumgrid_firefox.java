@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -16,14 +17,16 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import io.appium.java_client.android.AndroidDriver;
 
 //import com.opera.core.systems.OperaSettings.Capability;
 
 public class Seleniumgrid_firefox {
 	WebDriver driver;
 	String baseUrl="https://opensource-demo.orangehrmlive.com";
-	String nodeUrl="http://192.168.72.128:9876/wd/hub";
-	String nodeUrl1="http://192.168.2.241:5678/wd/hub";
+	String nodeUrl="http://192.168.72.128:1234/wd/hub";
+	String nodeUrl1="http://192.168.0.100:5678/wd/hub";
+	String nodeUrl2="http://127.0.0.1:4723/wd/hub";
 	
 	 public void url_insertion() {
 		  driver.get(baseUrl);
@@ -71,6 +74,26 @@ public class Seleniumgrid_firefox {
 		}
 		url_insertion();
 		login();
+	}
+  @Test()
+	public void android() {
+
+	  DesiredCapabilities dc=new DesiredCapabilities();
+	  dc.setCapability("deviceName", "Lenovo A6000");
+	  dc.setCapability("platformVersion", "5.0.2");
+	  dc.setCapability("platformName", "Android");
+	  dc.setCapability("appPackage", "com.android.chrome");
+	  dc.setCapability("appActivity", "com.google.android.apps.chrome.Main");	  
+		try {
+			//AndroidDriver<WebElement> driver=new AndroidDriver<WebElement>(dc);
+			driver=new RemoteWebDriver(new URL(nodeUrl2),dc);
+			
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		url_insertion();
+		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
 	}
 }
 

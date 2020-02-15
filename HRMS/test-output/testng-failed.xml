@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng_scenarios.HandlingbrowserNotificationsTest">
+      <class name="testng_scenarios.InformationTest">
         <methods>
           <include name="f"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- testng_scenarios.HandlingbrowserNotificationsTest -->
+      </class> <!-- testng_scenarios.InformationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

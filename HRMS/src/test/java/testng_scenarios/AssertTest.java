@@ -22,6 +22,7 @@ public class AssertTest {
 			driver.manage().window().maximize();
 			Assert.assertEquals("Selenium - Web Browser Automation", driver.getTitle());
 		
+
   }
 
 }

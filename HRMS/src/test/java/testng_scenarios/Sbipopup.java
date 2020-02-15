@@ -17,8 +17,8 @@ public class Sbipopup {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		WebDriver driver;
-		 System.setProperty("webdriver.chrome.driver","F:\\SELENIUM SOFTWARES 2019\\chromedriver.exe");
-			driver=new ChromeDriver();		
+		 System.setProperty("webdriver.gecko.driver","F:\\SELENIUM SOFTWARES 2019\\geckodriver.exe");
+			driver=new FirefoxDriver();	
 		
         //Launching the site.				
             driver.get("https://www.onlinesbi.com");			

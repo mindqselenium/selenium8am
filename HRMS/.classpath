@@ -25,5 +25,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="F:/SELENIUM SOFTWARES 2019/selenium-server-standalone-3.14.0.jar"/>
+	<classpathentry kind="lib" path="E:/SELENIUM SOFTWARES 2017/APPIUM SOFTWARES/java-client-6.0.0-BETA1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
